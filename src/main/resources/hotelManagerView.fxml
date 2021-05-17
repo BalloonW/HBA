@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="anchorPane" opacity="0.92" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: white;"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ro.upt.fis.sample.controller.HotelManagerViewController">
+    <children>
+        <JFXTextArea fx:id="hotelViewDescriptionArea" editable="false" focusColor="#64c164" layoutX="466.0"
+                     layoutY="172.0" prefHeight="105.0" prefWidth="458.0"/>
+        <JFXListView fx:id="hotelViewRoomsList" layoutX="44.0" layoutY="289.0" prefHeight="346.0" prefWidth="310.0"/>
+        <Label fx:id="hotelViewEmailLabel" layoutX="847.0" layoutY="640.0" prefHeight="18.0" prefWidth="144.0"
+               text="E-mail"/>
+        <Label fx:id="hotelViewPhoneLabel" layoutX="847.0" layoutY="668.0" prefHeight="18.0" prefWidth="150.0"
+               text="Phone Number"/>
+        <Label fx:id="hotelViewLocationLabel" layoutX="847.0" layoutY="612.0" prefHeight="18.0" prefWidth="150.0"
+               text="Location"/>
+        <ImageView fitHeight="18.0" fitWidth="17.0" layoutX="820.0" layoutY="641.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@1x/baseline_mail_outline_black_24dp.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="820.0" layoutY="669.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@1x/baseline_phone_black_24dp.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="820.0" layoutY="612.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@1x/baseline_place_black_24dp.png"/>
+            </image>
+        </ImageView>
+        <JFXButton fx:id="hotelViewAddRoomButton" buttonType="RAISED" layoutX="159.0" layoutY="646.0"
+                   style="-fx-background-color: #b6c2b7;" text="ADD ROOM"/>
+        <AnchorPane layoutY="51.0" prefHeight="0.0" prefWidth="1000.0" style="-fx-background-color: #98ee99;">
+            <children>
+                <Label fx:id="hotelViewHelloLabel" layoutX="399.0" layoutY="1.0" prefHeight="26.0" prefWidth="258.0"
+                       text="HELLO">
+                    <font>
+                        <Font name="Candara" size="20.0"/>
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="194.0" fitWidth="310.0" layoutX="44.0" layoutY="103.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@pictures/hotel.jpg"/>
+            </image>
+        </ImageView>
+        <AnchorPane prefHeight="52.0" prefWidth="1000.0" style="-fx-background-color: #66bb6a;">
+            <children>
+                <Label layoutX="367.0" layoutY="13.0" text="HOTEL BOOKING APPLICATION">
+                    <font>
+                        <Font name="Candara" size="20.0"/>
+                    </font>
+                </Label>
+                <JFXButton fx:id="hotelViewLogoutButton" layoutX="915.0" layoutY="12.0"
+                           style="-fx-background-color: #338a3e;" text="Log out">
+                    <font>
+                        <Font name="Candara" size="15.0"/>
+                    </font>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+        <JFXButton fx:id="hotelViewEditButton" buttonType="RAISED" layoutX="587.0" layoutY="644.0"
+                   style="-fx-background-color: #b6c2b7;" text="EDIT PROFILE">
+            <font>
+                <Font name="Candara" size="15.0"/>
+            </font>
+        </JFXButton>
+        <ImageView fitHeight="153.0" fitWidth="250.0" layoutX="466.0" layoutY="376.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@pictures/fitness.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="250.0" layoutX="707.0" layoutY="378.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@pictures/breakfast.jpg"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

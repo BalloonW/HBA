@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
+            prefWidth="1000.0" style="-fx-background-color: #66bb6a;" xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.upt.fis.sample.controller.LoginController">
+    <children>
+        <AnchorPane fx:id="loginAPane" layoutY="101.0" pickOnBounds="false" prefHeight="609.0" prefWidth="1000.0"
+                    style="-fx-background-color: white;">
+            <children>
+                <PasswordField fx:id="loginPassword" layoutX="350.0" layoutY="313.0" prefHeight="38.0" prefWidth="280.0"
+                               promptText="Password">
+                    <effect>
+                        <DropShadow>
+                            <color>
+                                <Color red="0.3921568691730499" green="0.8196078538894653" blue="0.3450980484485626"/>
+                            </color>
+                        </DropShadow>
+                    </effect>
+                </PasswordField>
+                <Label layoutX="464.0" layoutY="164.0" text="Login">
+                    <font>
+                        <Font name="Candara" size="22.0"/>
+                    </font>
+                </Label>
+                <ChoiceBox fx:id="loginChoiceBox" layoutX="415.0" layoutY="410.0" prefWidth="150.0"
+                           style="-fx-background-color: #b6c2b7;"/>
+                <Button fx:id="loginButton" layoutX="444.0" layoutY="469.0" mnemonicParsing="false" prefHeight="30.0"
+                        prefWidth="92.0" style="-fx-background-color: #b6c2b7;" text="Log In">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+                <Label layoutX="436.0" layoutY="374.0" text="Choose your role">
+                    <font>
+                        <Font name="Candara" size="15.0"/>
+                    </font>
+                </Label>
+                <TextField fx:id="loginUsername" centerShape="false" layoutX="350.0" layoutY="248.0" prefHeight="38.0"
+                           prefWidth="280.0" promptText="EMAIL">
+                    <effect>
+                        <DropShadow>
+                            <color>
+                                <Color red="0.3921568691730499" green="0.8196078538894653" blue="0.3450980484485626"/>
+                            </color>
+                        </DropShadow>
+                    </effect>
+                    <cursor>
+                        <Cursor fx:constant="TEXT"/>
+                    </cursor>
+                </TextField>
+                <ImageView fitHeight="26.0" fitWidth="36.0" layoutX="306.0" layoutY="254.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@1x/baseline_mail_outline_black_24dp.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="306.0" layoutY="319.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@1x/baseline_vpn_key_black_24dp.png"/>
+                    </image>
+                </ImageView>
+                <Label fx:id="errorIntroduceCredentialsLabel" layoutX="436.0" layoutY="444.0" prefHeight="18.0"
+                       prefWidth="143.0" textFill="#ea0808"/>
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="367.0" layoutY="27.0"
+               text="HOTEL BOOKING APPLICATION" textFill="#282726">
+            <font>
+                <Font name="Candara" size="20.0"/>
+            </font>
+        </Label>
+        <Button fx:id="loginSignUpButton" layoutX="847.0" layoutY="26.0" mnemonicParsing="false" prefHeight="26.0"
+                prefWidth="92.0" style="-fx-background-color: #338a3e;" text="Sign Up">
+            <font>
+                <Font name="Candara" size="15.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" opacity="0.92" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.upt.fis.sample.controller.HotelViewForClientController">
+   <children>
+      <JFXTextArea fx:id="hotelViewDescriptionArea" editable="false" focusColor="#64c164" layoutX="390.0" layoutY="172.0" prefHeight="106.0" prefWidth="534.0" text="HELLO" />
+      <JFXListView fx:id="roomsList" layoutX="44.0" layoutY="303.0" prefHeight="346.0" prefWidth="310.0" />
+      <Label fx:id="emailLabel" layoutX="847.0" layoutY="640.0" prefHeight="18.0" prefWidth="144.0" text="E-mail" />
+      <Label fx:id="phoneLabel" layoutX="847.0" layoutY="668.0" prefHeight="18.0" prefWidth="150.0" text="Phone Number" />
+      <Label fx:id="locationLabel" layoutX="847.0" layoutY="612.0" prefHeight="18.0" prefWidth="150.0" text="Location" />
+      <ImageView fitHeight="18.0" fitWidth="17.0" layoutX="820.0" layoutY="641.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1x/baseline_mail_outline_black_24dp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="820.0" layoutY="669.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1x/baseline_phone_black_24dp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="820.0" layoutY="612.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1x/baseline_place_black_24dp.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="51.0" prefHeight="0.0" prefWidth="1000.0" style="-fx-background-color: #98ee99;">
+         <children>
+            <Label fx:id="helloLabel" layoutX="383.0" layoutY="1.0" prefHeight="26.0" prefWidth="258.0" text="HELLO">
+               <font>
+                  <Font name="Candara" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="194.0" fitWidth="310.0" layoutX="44.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/hotel.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="52.0" prefWidth="1000.0" style="-fx-background-color: #66bb6a;">
+         <children>
+            <Label layoutX="367.0" layoutY="13.0" text="HOTEL BOOKING APPLICATION">
+               <font>
+                  <Font name="Candara" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="backButton" layoutX="925.0" layoutY="12.0" style="-fx-background-color: #338a3e;" text="Back">
+               <font>
+                  <Font name="Candara" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="reservationButton" buttonType="RAISED" layoutX="583.0" layoutY="626.0" style="-fx-background-color: #b6c2b7;" text="Make reservation">
+         <font>
+            <Font name="Candara" size="15.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="393.0" layoutY="301.0" prefHeight="298.0" prefWidth="534.0" style="-fx-background-color: #98ee99;">
+         <children>
+            <DatePicker fx:id="startDatePicker" layoutX="57.0" layoutY="96.0" style="-fx-background-color: #b6c2b7;" />
+            <DatePicker fx:id="enddatePicker" layoutX="57.0" layoutY="134.0" style="-fx-background-color: #b6c2b7;" />
+            <Label layoutX="14.0" layoutY="101.0" text="Start">
+               <font>
+                  <Font name="Candara Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="138.0" text="End">
+               <font>
+                  <Font name="Candara Bold" size="14.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="capacityChioce" layoutX="349.0" layoutY="132.0" prefHeight="26.0" prefWidth="175.0" style="-fx-background-color: #b6c2b7;" />
+            <ChoiceBox fx:id="roomTypeChoice" layoutX="349.0" layoutY="95.0" prefHeight="26.0" prefWidth="175.0" style="-fx-background-color: #b6c2b7;" />
+            <Label layoutX="284.0" layoutY="136.0" text="Capacity">
+               <font>
+                  <Font name="Candara Bold" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutY="-1.0" prefHeight="52.0" prefWidth="539.0" style="-fx-background-color: #66bb6a;">
+               <children>
+                  <Label layoutX="196.0" layoutY="13.0" text="Make reservation">
+                     <font>
+                        <Font name="Candara" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <JFXCheckBox fx:id="breakfastService" layoutX="349.0" layoutY="184.0" text="Breakfast" />
+            <JFXCheckBox fx:id="fitnessService" layoutX="349.0" layoutY="225.0" text="Massage and fitness" />
+            <Label layoutX="277.0" layoutY="100.0" text="Room type">
+               <font>
+                  <Font name="Candara Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalPrice" layoutX="15.0" layoutY="258.0" prefHeight="18.0" prefWidth="132.0" text="Total price: ">
+               <font>
+                  <Font name="Candara" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ALL_ROOMS_RESRVED" layoutX="11.0" layoutY="234.0" prefHeight="18.0" prefWidth="162.0" textFill="#f40606">
+               <font>
+                  <Font name="Candara Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="sorryLABEL" layoutX="11.0" layoutY="202.0" prefHeight="17.0" prefWidth="162.0" textFill="#ff0909" />
+            <Label fx:id="INVALID_DATE" layoutX="59.0" layoutY="63.0" prefHeight="18.0" prefWidth="175.0" textFill="#f20c0c" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="reservationSuccess" layoutX="599.0" layoutY="603.0" prefHeight="18.0" prefWidth="140.0" textFill="#6234f7">
+         <font>
+            <Font name="Candara Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

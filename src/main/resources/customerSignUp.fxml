@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #66bb6a;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.upt.fis.sample.controller.SignUpController">
+    <children>
+        <AnchorPane layoutY="87.0" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: white;">
+            <children>
+                <AnchorPane prefHeight="35.0" prefWidth="1000.0" style="-fx-background-color: #98ee99;">
+                    <children>
+                        <Label layoutX="474.0" layoutY="8.0" text="Sign Up" textFill="#403c3c">
+                            <font>
+                                <Font name="Candara" size="16.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <PasswordField fx:id="signUpPassword" layoutX="425.0" layoutY="520.0" promptText="Pasword1@">
+                    <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.3921568691730499" green="0.8196078538894653" blue="0.3450980484485626" />
+                     </color>
+                  </DropShadow>
+                    </effect>
+                </PasswordField>
+                <TextField fx:id="signUpFirstName" centerShape="false" layoutX="425.0" layoutY="284.0" pickOnBounds="false" promptText="FIRST NAME">
+                    <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.3921568691730499" green="0.8196078538894653" blue="0.3450980484485626" />
+                     </color>
+                  </DropShadow>
+                    </effect>
+                </TextField>
+                <TextField fx:id="signUpLastName" layoutX="425.0" layoutY="344.0" promptText="LAST NAME">
+                    <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.3921568691730499" green="0.8196078538894653" blue="0.3450980484485626" />
+                     </color>
+                  </DropShadow>
+                    </effect>
+                </TextField>
+                <TextField fx:id="signUpEmail" layoutX="425.0" layoutY="407.0" promptText="user@exemple.com">
+                    <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.3921568691730499" green="0.8196078538894653" blue="0.3450980484485626" />
+                     </color>
+                  </DropShadow>
+                    </effect>
+                </TextField>
+                <TextField fx:id="signUpPhone" layoutX="425.0" layoutY="465.0" promptText="0700000000">
+                    <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.3921568691730499" green="0.8196078538894653" blue="0.3450980484485626" />
+                     </color>
+                  </DropShadow>
+                    </effect>
+                </TextField>
+                <JFXButton fx:id="signUpButton" alignment="CENTER" buttonType="RAISED" layoutX="459.0" layoutY="585.0" prefHeight="35.0" prefWidth="81.0" ripplerFill="#bf9d9d" style="-fx-background-color: #b6c2b7;" text="Sign Up" textFill="#534e4e" />
+                <Group layoutX="278.0" layoutY="216.0" />
+                <ChoiceBox fx:id="signUpChoiceBox" layoutX="425.0" layoutY="215.0" prefWidth="150.0" style="-fx-background-color: #b6c2b7;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.3921568691730499" green="0.8196078538894653" blue="0.3450980484485626" />
+                     </color>
+                  </DropShadow>
+               </effect></ChoiceBox>
+                <Label layoutX="306.0" layoutY="219.0" text="Choose your role">
+                    <font>
+                        <Font name="Candara Bold" size="13.0" />
+                    </font>
+                </Label>
+                <Label fx:id="errorLabel" layoutX="424.0" layoutY="380.0" prefHeight="16.0" prefWidth="150.0" textFill="#e70000">
+                    <font>
+                        <Font name="Candara" size="12.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="18.0" fitWidth="18.0" focusTraversable="true" layoutX="377.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@1x/baseline_badge_black_24dp.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="18.0" fitWidth="18.0" focusTraversable="true" layoutX="377.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@1x/baseline_mail_outline_black_24dp.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="18.0" fitWidth="18.0" focusTraversable="true" layoutX="377.0" layoutY="469.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@1x/baseline_phone_black_24dp.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="18.0" fitWidth="18.0" focusTraversable="true" layoutX="377.0" layoutY="524.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@1x/baseline_vpn_key_black_24dp.png" />
+                    </image>
+                </ImageView>
+            <Label fx:id="invalidEmailLabel" layoutX="588.0" layoutY="411.0" prefHeight="18.0" prefWidth="150.0" textFill="#e70606" />
+            <Label fx:id="invalidPhoneLabel" layoutX="588.0" layoutY="469.0" prefHeight="18.0" prefWidth="150.0" textFill="#e70606" />
+            <Label fx:id="invalidPasswordLabel" layoutX="588.0" layoutY="524.0" prefHeight="18.0" prefWidth="150.0" textFill="#e70606" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="367.0" layoutY="37.0" text="HOTEL BOOKIGN APPLICATION">
+            <font>
+                <Font name="Candara" size="20.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
